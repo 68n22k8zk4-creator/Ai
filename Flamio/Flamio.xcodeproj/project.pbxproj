@@ -1,0 +1,68 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {};
+	objectVersion = 56;
+	objects = {
+
+		A29575F79691C24418420770 /* FlamioApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FlamioApp/FlamioApp.swift"; sourceTree = "<group>"; };
+		7FE6ADF124DBA7CB3D580F46 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FlamioApp/Models.swift"; sourceTree = "<group>"; };
+		E6541F69FA0B1A6FFF2229E6 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FlamioApp/Store.swift"; sourceTree = "<group>"; };
+		A457AAF4DAEA899BC2EA5EAC /* WeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FlamioApp/WeatherService.swift"; sourceTree = "<group>"; };
+		3E75DE536B30DA18DE017FC0 /* Components.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FlamioApp/Components.swift"; sourceTree = "<group>"; };
+		8E78C66E87381AA660A69716 /* WeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FlamioApp/WeatherView.swift"; sourceTree = "<group>"; };
+		87EEBB0F0A73B4FB59ECB5F6 /* ShiftsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FlamioApp/ShiftsView.swift"; sourceTree = "<group>"; };
+		BF4F669443D967CB97612CEF /* PetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FlamioApp/PetView.swift"; sourceTree = "<group>"; };
+		823349C9FC523D3900713EFF /* FinanceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FlamioApp/FinanceView.swift"; sourceTree = "<group>"; };
+		8BB4E0F375010C67432CAD70 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FlamioApp/SettingsView.swift"; sourceTree = "<group>"; };
+		BF843A92E4AACF29909EC200 /* AppGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Shared/AppGroup.swift"; sourceTree = "<group>"; };
+		DA0650609CD7308C555BD2A0 /* FlamioWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FlamioWidget/FlamioWidget.swift"; sourceTree = "<group>"; };
+		CADF4444A96836CCC06616F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FlamioApp/Info.plist"; sourceTree = "<group>"; };
+		00936182F07CB908167C2823 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FlamioWidget/Info.plist"; sourceTree = "<group>"; };
+		38717B802DC04023354E2284 /* Flamio.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Config/Flamio.entitlements"; sourceTree = "<group>"; };
+		3D76B39ED3092FA3F035402D /* FlamioWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Config/FlamioWidget.entitlements"; sourceTree = "<group>"; };
+		4E8E6BAB5BF991D171E32C01 /* FlamioApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29575F79691C24418420770 /* FlamioApp.swift */; };
+		CEC72404F8E73CDA9BC2D572 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE6ADF124DBA7CB3D580F46 /* Models.swift */; };
+		E39D0C452C236608AA948235 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6541F69FA0B1A6FFF2229E6 /* Store.swift */; };
+		180769ACBDFD2E7BAA50F613 /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A457AAF4DAEA899BC2EA5EAC /* WeatherService.swift */; };
+		33A8DECFD063C290758A4385 /* Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E75DE536B30DA18DE017FC0 /* Components.swift */; };
+		2DF101AC1BEE1602CB896852 /* WeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E78C66E87381AA660A69716 /* WeatherView.swift */; };
+		82E77391F2652D78D4BCDA32 /* ShiftsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EEBB0F0A73B4FB59ECB5F6 /* ShiftsView.swift */; };
+		73FD4E6CF1889EE388C9ADFC /* PetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4F669443D967CB97612CEF /* PetView.swift */; };
+		AF53F19233EED900DDFE741B /* FinanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823349C9FC523D3900713EFF /* FinanceView.swift */; };
+		7A3BFB30ED071D0F0D56A030 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB4E0F375010C67432CAD70 /* SettingsView.swift */; };
+		B13A253537BCAC9E1F3152FA /* AppGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF843A92E4AACF29909EC200 /* AppGroup.swift */; };
+		62AA2938F5379ADE03E367F6 /* FlamioWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0650609CD7308C555BD2A0 /* FlamioWidget.swift */; };
+		8A6CD8B4FFF750A8A01FBEFC /* AppGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF843A92E4AACF29909EC200 /* AppGroup.swift */; };
+		0914D3F140A47BD4EFEE91FB /* FlamioWidget.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 1B442E42980596EBCD246D51 /* FlamioWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B9340614599AB78F485950C7 /* Flamio */ = {isa = PBXGroup; children = ( 82CF2A43A7100F086D7FCFDD /* FlamioApp */, 9CB302E9C7F6377B351DBEAB /* Shared */, 1029F7BBD2FC8876965F659D /* Config */, EC21069A65F2CA977FE14A64 /* FlamioWidget */, 547D009064F7C3F13BEF3460 /* Products */, ); sourceTree = "<group>"; };
+		82CF2A43A7100F086D7FCFDD /* FlamioApp */ = {isa = PBXGroup; children = ( A29575F79691C24418420770 , 7FE6ADF124DBA7CB3D580F46 , E6541F69FA0B1A6FFF2229E6 , A457AAF4DAEA899BC2EA5EAC , 3E75DE536B30DA18DE017FC0 , 8E78C66E87381AA660A69716 , 87EEBB0F0A73B4FB59ECB5F6 , BF4F669443D967CB97612CEF , 823349C9FC523D3900713EFF , 8BB4E0F375010C67432CAD70, ); path = FlamioApp; sourceTree = "<group>"; };
+		9CB302E9C7F6377B351DBEAB /* Shared */ = {isa = PBXGroup; children = ( BF843A92E4AACF29909EC200, ); path = Shared; sourceTree = "<group>"; };
+		1029F7BBD2FC8876965F659D /* Config */ = {isa = PBXGroup; children = ( CADF4444A96836CCC06616F1, 00936182F07CB908167C2823, 38717B802DC04023354E2284, 3D76B39ED3092FA3F035402D, ); path = Config; sourceTree = "<group>"; };
+		547D009064F7C3F13BEF3460 /* Products */ = {isa = PBXGroup; children = ( 84337AD8D27FCD69AF2C4FC2 /* Flamio.app */, 1B442E42980596EBCD246D51 /* FlamioWidget.appex */, ); name = Products; sourceTree = "<group>"; };
+		EC21069A65F2CA977FE14A64 /* FlamioWidget */ = {isa = PBXGroup; children = ( DA0650609CD7308C555BD2A0, ); path = FlamioWidget; sourceTree = "<group>"; };
+		67281B94473E6F647EB8E42B /* Sources */ = {isa = PBXSourcesBuildPhase; files = ( 4E8E6BAB5BF991D171E32C01, CEC72404F8E73CDA9BC2D572, E39D0C452C236608AA948235, 180769ACBDFD2E7BAA50F613, 33A8DECFD063C290758A4385, 2DF101AC1BEE1602CB896852, 82E77391F2652D78D4BCDA32, 73FD4E6CF1889EE388C9ADFC, AF53F19233EED900DDFE741B, 7A3BFB30ED071D0F0D56A030, B13A253537BCAC9E1F3152FA, ); };
+		5CD0E404AB2F18657024E02A /* Sources */ = {isa = PBXSourcesBuildPhase; files = ( 62AA2938F5379ADE03E367F6, 8A6CD8B4FFF750A8A01FBEFC, ); };
+		285BB1C1430063331E9F5DD0 /* Resources */ = {isa = PBXResourcesBuildPhase; files = (); };
+		702FBC3B06F75295D844C24E /* Resources */ = {isa = PBXResourcesBuildPhase; files = (); };
+		424153ED3CD079DB4DB459AF /* Frameworks */ = {isa = PBXFrameworksBuildPhase; files = (); };
+		7273E7DEF2F5F1A1C182D9FF /* Frameworks */ = {isa = PBXFrameworksBuildPhase; files = (); };
+		BAE1492BDE49D13FF7E211EB /* Embed Foundation Extensions */ = {isa = PBXCopyFilesBuildPhase; buildActionMask = 2147483647; dstPath = ""; dstSubfolderSpec = 13; files = ( 0914D3F140A47BD4EFEE91FB /* FlamioWidget.appex in Embed Foundation Extensions */, ); name = "Embed Foundation Extensions"; runOnlyForDeploymentPostprocessing = 0; };
+		84337AD8D27FCD69AF2C4FC2 /* Flamio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flamio.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B442E42980596EBCD246D51 /* FlamioWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = FlamioWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		84F33D679031849737E2E4B2 /* Debug */ = {isa = XCBuildConfiguration; buildSettings = {ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor; CODE_SIGN_ENTITLEMENTS = Config/Flamio.entitlements; CODE_SIGN_STYLE = Automatic; CURRENT_PROJECT_VERSION = 1; DEVELOPMENT_TEAM = ""; INFOPLIST_FILE = FlamioApp/Info.plist; IPHONEOS_DEPLOYMENT_TARGET = 17.0; LD_RUNPATH_SEARCH_PATHS = ("$(inherited)", "@executable_path/Frameworks"); PRODUCT_BUNDLE_IDENTIFIER = com.flamio.app; PRODUCT_NAME = "$(TARGET_NAME)"; SWIFT_VERSION = 5.0; TARGETED_DEVICE_FAMILY = "1,2"; }; name = Debug; };
+		BFAE0D15DE43A4DAAFA8BE66 /* Release */ = {isa = XCBuildConfiguration; buildSettings = {ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor; CODE_SIGN_ENTITLEMENTS = Config/Flamio.entitlements; CODE_SIGN_STYLE = Automatic; CURRENT_PROJECT_VERSION = 1; DEVELOPMENT_TEAM = ""; INFOPLIST_FILE = FlamioApp/Info.plist; IPHONEOS_DEPLOYMENT_TARGET = 17.0; LD_RUNPATH_SEARCH_PATHS = ("$(inherited)", "@executable_path/Frameworks"); PRODUCT_BUNDLE_IDENTIFIER = com.flamio.app; PRODUCT_NAME = "$(TARGET_NAME)"; SWIFT_OPTIMIZATION_LEVEL = "-O"; SWIFT_VERSION = 5.0; TARGETED_DEVICE_FAMILY = "1,2"; }; name = Release; };
+		77F9BDA1FF39AD8BD95B929C /* Debug */ = {isa = XCBuildConfiguration; buildSettings = {ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor; CODE_SIGN_ENTITLEMENTS = Config/FlamioWidget.entitlements; CODE_SIGN_STYLE = Automatic; CURRENT_PROJECT_VERSION = 1; DEVELOPMENT_TEAM = ""; INFOPLIST_FILE = FlamioWidget/Info.plist; IPHONEOS_DEPLOYMENT_TARGET = 17.0; LD_RUNPATH_SEARCH_PATHS = ("$(inherited)", "@executable_path/Frameworks"); PRODUCT_BUNDLE_IDENTIFIER = com.flamio.app.widget; PRODUCT_NAME = "$(TARGET_NAME)"; SWIFT_VERSION = 5.0; TARGETED_DEVICE_FAMILY = "1,2"; }; name = Debug; };
+		13FB205E4F6ADA6D983867AD /* Release */ = {isa = XCBuildConfiguration; buildSettings = {ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor; CODE_SIGN_ENTITLEMENTS = Config/FlamioWidget.entitlements; CODE_SIGN_STYLE = Automatic; CURRENT_PROJECT_VERSION = 1; DEVELOPMENT_TEAM = ""; INFOPLIST_FILE = FlamioWidget/Info.plist; IPHONEOS_DEPLOYMENT_TARGET = 17.0; LD_RUNPATH_SEARCH_PATHS = ("$(inherited)", "@executable_path/Frameworks"); PRODUCT_BUNDLE_IDENTIFIER = com.flamio.app.widget; PRODUCT_NAME = "$(TARGET_NAME)"; SWIFT_OPTIMIZATION_LEVEL = "-O"; SWIFT_VERSION = 5.0; TARGETED_DEVICE_FAMILY = "1,2"; }; name = Release; };
+		8B429FCF8E65333911689421 = {isa = XCConfigurationList; buildConfigurations = ( 77F9BDA1FF39AD8BD95B929C, 13FB205E4F6ADA6D983867AD ); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+		E3435DDA2687639586BF0B70 /* Flamio */ = {isa = PBXNativeTarget; buildConfigurationList = 1D97B77EAD2380603A3F2A82; buildPhases = ( 424153ED3CD079DB4DB459AF, 67281B94473E6F647EB8E42B, 285BB1C1430063331E9F5DD0, BAE1492BDE49D13FF7E211EB, ); buildRules = (); dependencies = ( EE1DEC3FECAFB049B3EB4C70, ); name = Flamio; productName = Flamio; productReference = 84337AD8D27FCD69AF2C4FC2; productType = "com.apple.product-type.application"; };
+		0661F517A86C8F5C87C0EDBA /* FlamioWidget */ = {isa = PBXNativeTarget; buildConfigurationList = 8B429FCF8E65333911689421; buildPhases = ( 7273E7DEF2F5F1A1C182D9FF, 5CD0E404AB2F18657024E02A, 702FBC3B06F75295D844C24E, ); buildRules = (); dependencies = (); name = FlamioWidget; productName = FlamioWidget; productReference = 1B442E42980596EBCD246D51; productType = "com.apple.product-type.app-extension"; };
+		EE1DEC3FECAFB049B3EB4C70 /* PBXTargetDependency */ = {isa = PBXTargetDependency; target = 0661F517A86C8F5C87C0EDBA; targetProxy = 99E6A51DA0B86FE48AEB34ED; };
+		99E6A51DA0B86FE48AEB34ED /* PBXContainerItemProxy */ = {isa = PBXContainerItemProxy; containerPortal = 46F86FAA6BBF9AC94A7E4595; proxyType = 1; remoteGlobalIDString = 0661F517A86C8F5C87C0EDBA; remoteInfo = FlamioWidget; };
+		A3854986E8A9E54BF45A1B61 = {isa = XCBuildConfiguration; buildSettings = {ALWAYS_SEARCH_USER_PATHS = NO; CLANG_ENABLE_MODULES = YES; SWIFT_VERSION = 5.0; }; name = Debug; };
+		17C65E39F7BBE427EC3B4475 = {isa = XCBuildConfiguration; buildSettings = {ALWAYS_SEARCH_USER_PATHS = NO; CLANG_ENABLE_MODULES = YES; SWIFT_VERSION = 5.0; }; name = Release; };
+		1F4E3D13C2320EDA50221924 = {isa = XCConfigurationList; buildConfigurations = ( A3854986E8A9E54BF45A1B61, 17C65E39F7BBE427EC3B4475 ); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+		46F86FAA6BBF9AC94A7E4595 /* Project object */ = {isa = PBXProject; attributes = {LastSwiftUpdateCheck = 1500; LastUpgradeCheck = 1500; TargetAttributes = { E3435DDA2687639586BF0B70 = { CreatedOnToolsVersion = 15.0; }; 0661F517A86C8F5C87C0EDBA = { CreatedOnToolsVersion = 15.0; }; }; }; buildConfigurationList = 1F4E3D13C2320EDA50221924; compatibilityVersion = "Xcode 14.0"; developmentRegion = en; hasScannedForEncodings = 0; knownRegions = (en, Base); mainGroup = B9340614599AB78F485950C7; productRefGroup = 547D009064F7C3F13BEF3460; projectDirPath = ""; projectRoot = ""; targets = ( E3435DDA2687639586BF0B70, 0661F517A86C8F5C87C0EDBA ); };
+	};
+	rootObject = 46F86FAA6BBF9AC94A7E4595 /* Project object */;
+}

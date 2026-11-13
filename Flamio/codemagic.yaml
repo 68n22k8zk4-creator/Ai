@@ -1,0 +1,25 @@
+workflows:
+  ios-workflow:
+    name: Flamio iOS
+    environment:
+      ios_signing:
+        distribution_type: app_store
+        bundle_identifier: com.flamio.app
+      vars:
+        XCODE_WORKSPACE: Flamio.xcodeproj
+        XCODE_SCHEME: Flamio
+    scripts:
+      - name: Resolve Swift packages
+        script: xcodebuild -resolvePackageDependencies -project "$XCODE_WORKSPACE" -scheme "$XCODE_SCHEME"
+      - name: Build and archive
+        script: |
+          xcode-project build-ipa \\
+            --project "$XCODE_WORKSPACE" \\
+            --scheme "$XCODE_SCHEME"
+    artifacts:
+      - build/ios/ipa/*.ipa
+      - /tmp/xcodebuild_logs/*.log
+    publishing:
+      email:
+        recipients:
+          - maestro_bluentano@proton.me
