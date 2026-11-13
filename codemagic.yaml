@@ -1,40 +1,37 @@
 workflows:
-  ios-ipa:
-    name: LifeApp unsigned IPA
-    instance_type: mac_mini_m2
+  ios-workflow:
+    name: Flamio iOS Unsigned
     max_build_duration: 30
+    instance_type: mac_mini_m2
     environment:
       xcode: latest
+      vars:
+        XCODE_PROJECT: Flamio.xcodeproj
+        XCODE_SCHEME: Flamio
     scripts:
-      - name: Prepare sources
+      - name: Resolve Swift packages
+        script: xcodebuild -resolvePackageDependencies -project "$XCODE_PROJECT" -scheme "$XCODE_SCHEME"
+      - name: Build app without signing
         script: |
-          # Работает в двух вариантах: в репозитории лежит LifeApp.zip ИЛИ уже распакованные папки
-          rm -rf src && mkdir src
-          if [ -f LifeApp.zip ]; then
-            unzip -q LifeApp.zip -d src
-          else
-            cp -R App Shared Widget project.yml src/
-          fi
-          # если внутри zip оказалась обёртка-папка
-          if [ ! -f src/project.yml ] && [ -f src/LifeApp/project.yml ]; then
-            mv src/LifeApp/* src/
-          fi
-          ls -la src
-      - name: Generate Xcode project
+          xcodebuild build \
+            -project "$XCODE_PROJECT" \
+            -scheme "$XCODE_SCHEME" \
+            -configuration Release \
+            -sdk iphoneos \
+            -derivedDataPath build/DerivedData \
+            CODE_SIGN_IDENTITY="" \
+            CODE_SIGNING_REQUIRED=NO \
+            CODE_SIGNING_ALLOWED=NO
+      - name: Package into IPA
         script: |
-          brew install xcodegen
-          cd src && xcodegen generate
-      - name: Build (unsigned)
-        script: |
-          cd src
-          xcodebuild -project LifeApp.xcodeproj -scheme LifeApp \
-            -configuration Release -sdk iphoneos -derivedDataPath build \
-            CODE_SIGNING_ALLOWED=NO CODE_SIGNING_REQUIRED=NO CODE_SIGN_IDENTITY="" build
-      - name: Package IPA
-        script: |
-          cd src
-          mkdir -p Payload
-          cp -R build/Build/Products/Release-iphoneos/LifeApp.app Payload/
-          zip -qr Flamio.ipa Payload
+          mkdir -p build/ios/ipa/Payload
+          cp -r build/DerivedData/Build/Products/Release-iphoneos/Flamio.app build/ios/ipa/Payload/
+          cd build/ios/ipa
+          zip -r Flamio-unsigned.ipa Payload
     artifacts:
-      - src/Flamio.ipa
+      - build/ios/ipa/*.ipa
+      - /tmp/xcodebuild_logs/*.log
+    publishing:
+      email:
+        recipients:
+          - maestro_bluentano@proton.me
